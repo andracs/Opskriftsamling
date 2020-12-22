@@ -6,4 +6,8 @@ public class SimpleTest {
         System.out.println("Velkommen til min opskrifts-applikations-dummy");
 
     }
+    public void blankLine(){
+        System.out.println("\n");
+    }
+
 }
