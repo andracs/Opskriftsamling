@@ -1,6 +1,6 @@
 package sample;
 
-public class Ingrediens {
+public class Ingrediens extends Opskrift {
 
     String navn;
     int kalorie;
@@ -22,4 +22,7 @@ public class Ingrediens {
         return kalorie;
     }
 
+    Ingrediens(){
+        System.out.println("Opskrift er oprettet: ");
+}
 }

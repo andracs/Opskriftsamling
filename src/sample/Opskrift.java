@@ -49,4 +49,9 @@ public class Opskrift {
         return ingredienser;
     }
 
+    Opskrift(){
+
+        System.out.println("Opskrift er oprettet: " + navn);
+    }
+
 }
