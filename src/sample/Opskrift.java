@@ -71,4 +71,9 @@ public class Opskrift {
         }
     }
 
+    public void visFremgangsmaade(){
+        System.out.println("Opskriften for " + getNavn() + ": \n" + fremgangsmaade + "\n");
+
+    }
+
 }
