@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.ArrayList;
+
 public class Opskrift {
     String navn;
     String fremgangsmaade;
@@ -52,6 +54,21 @@ public class Opskrift {
     Opskrift(){
 
         System.out.println("Opskrift er oprettet: " + navn);
+    }
+
+    public void addIngrediens(Ingrediens ingrediens){
+        ArrayList<Ingrediens> ingredienser = new ArrayList<Ingrediens>();
+        for (int i = 0; i < 4; i++){
+           Ingrediens ingr = new Ingrediens();
+
+            ingredienser.add(ingr);
+        }
+    }
+
+    public void visIngredienser(){
+        for (int i = 0; i < 4; i++) {
+            System.out.println(i);
+        }
     }
 
 }

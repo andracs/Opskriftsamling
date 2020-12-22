@@ -14,10 +14,15 @@ public class SimpleTest {
         System.out.println("Velkommen til min opskrifts-applikations-dummy");
 
         Opskrift te = new Opskrift();
-        String[] Te = {"tebrev", "vand", "citron"};
+        navn = "Te";
+        te.addIngrediens(new Ingrediens("Vand"));
+        te.addIngrediens(new Ingrediens("Tebreve"));
+        te.addIngrediens(new Ingrediens("Citron"));
 
         Opskrift glasur = new Opskrift();
-        String[] Glasur = {"vand", "flormelis"};
+        navn = "Glasur";
+        te.addIngrediens(new Ingrediens("Vand"));
+        te.addIngrediens(new Ingrediens("Flormelis"));
 
 
     }
