@@ -75,5 +75,10 @@ public class Opskrift {
         System.out.println("Opskriften for " + getNavn() + ": \n" + fremgangsmaade + "\n");
 
     }
+    public void visOpskrift(){
+        visIngredienser();
+        visFremgangsmaade();
+    }
+
 
 }
