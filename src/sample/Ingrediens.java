@@ -25,4 +25,10 @@ public class Ingrediens extends Opskrift {
     Ingrediens(){
         System.out.println("Opskrift er oprettet: ");
 }
+    public boolean rigPaaKalorier(){
+        if (kalorie > 100) System.out.println("" + navn + " er rig på kalorier.");
+        else System.out.println("" + navn + " er ikke rig på kalorier.");
+    }
+
+
 }

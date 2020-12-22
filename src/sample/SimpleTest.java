@@ -32,4 +32,13 @@ public class SimpleTest {
     public void blankLine(){
         System.out.println("\n");
     }
+
+    Ingrediens ingrediens = new Ingrediens();
+        navn = "citron";
+        ingrediens.rigPaaKalorier();
+
+        navn = "sukker"
+        ingrediens.rigPaaKalorier();
+
+
 }
