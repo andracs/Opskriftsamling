@@ -1,34 +1,36 @@
 package sample;
 
-public class Ingrediens extends Opskrift {
+public class Ingrediens {
 
     String navn;
     int kalorie;
 
 
-    void setNavn(String navn){
+    void setNavn(String navn) {
         this.navn = navn;
     }
 
-    void setKalorie(int kalorie){
+    void setKalorie(int kalorie) {
         this.kalorie = kalorie;
     }
 
-    String getNavn(){
+    String getNavn() {
         return navn;
     }
 
-    int getKalorie(){
+    int getKalorie() {
         return kalorie;
     }
 
-    Ingrediens(){
+    Ingrediens() {
         System.out.println("Opskrift er oprettet: ");
-}
-    public boolean rigPaaKalorier(){
-        if (kalorie > 100) System.out.println("" + navn + " er rig på kalorier.");
-        else System.out.println("" + navn + " er ikke rig på kalorier.");
     }
 
+    public boolean rigPaaKalorier() {
+
+
+        if (kalorie > 100) {System.out.println("" + navn + " er rig på kalorier.");}
+        else {System.out.println("" + navn + " er ikke rig på kalorier.");}
+    }
 
 }

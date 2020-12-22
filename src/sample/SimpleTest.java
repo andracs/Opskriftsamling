@@ -13,31 +13,33 @@ public class SimpleTest {
     public static void main(String[] args) {
         System.out.println("Velkommen til min opskrifts-applikations-dummy");
 
-        Opskrift te = new Opskrift();
+        Opskrift opskrift = new Opskrift();
         navn = "Te";
-        te.addIngrediens(new Ingrediens("Vand"));
-        te.addIngrediens(new Ingrediens("Tebreve"));
-        te.addIngrediens(new Ingrediens("Citron"));
+        opskrift.addIngrediens(new Ingrediens("Vand"));
+        opskrift.addIngrediens(new Ingrediens("Tebreve"));
+        opskrift.addIngrediens(new Ingrediens("Citron"));
         fremgangsmaade = "- Put teen i kogende vand, vent 2 minutter og server.";
-        Opskrift.visFremgangsmaade("Te");
+        opskrift.visFremgangsmaade();
 
-        Opskrift glasur = new Opskrift();
+
         navn = "Glasur";
-        te.addIngrediens(new Ingrediens("Vand"));
-        te.addIngrediens(new Ingrediens("Flormelis"));
+        opskrift.addIngrediens(new Ingrediens("Vand"));
+        opskrift.addIngrediens(new Ingrediens("Flormelis"));
         fremgangsmaade = "- Du blander flormelis og sukker, og smører det på kagen.";
-        Opskrift.visFremgangsmaade("Glasur");
+        opskrift.visFremgangsmaade();
 
     }
     public void blankLine(){
         System.out.println("\n");
     }
 
-    Ingrediens ingrediens = new Ingrediens();
+        Ingrediens ingrediens = new Ingrediens();
         navn = "citron";
+        kalorier = 15;
         ingrediens.rigPaaKalorier();
 
         navn = "sukker"
+        kalorier = 350;
         ingrediens.rigPaaKalorier();
 
 
