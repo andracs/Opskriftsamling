@@ -1,0 +1,3 @@
+# Opskriftsamling
+
+Udviklet på datamatiker.
